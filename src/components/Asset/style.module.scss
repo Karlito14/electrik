@@ -1,0 +1,19 @@
+@use '@src/variables.scss';
+
+.container {
+  margin: 10px;
+  padding: 10px;
+
+  i {
+    font-size: 60px;
+  }
+}
+
+.title {
+  color: variables.$orange;
+  margin: 20px 0 15px;
+}
+
+.text {
+  font-size: 20px;
+}

@@ -1,0 +1,28 @@
+@use '@src/variables.scss';
+
+.section,
+.section_job {
+  margin: 80px;
+  text-align: center;
+  padding-bottom: 30px;
+
+  @media (max-width: variables.$breakpoint_md) {
+    margin: 60px;
+  }
+}
+
+.separator {
+  background-color: variables.$orange;
+  width: 50%;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 20px;
+}

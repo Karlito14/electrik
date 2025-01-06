@@ -1,0 +1,69 @@
+@use '@src/variables.scss';
+
+.banner {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 80px;
+  padding-left: 100px;
+
+  @media (max-width: variables.$breakpoint_md) {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+
+    @media (max-width: variables.$breakpoint_md) {
+      height: 300px;
+    }
+  }
+}
+
+.title {
+  position: absolute;
+  font-size: 64px;
+  color: white;
+  margin-bottom: 30px;
+
+  @media (max-width: variables.$breakpoint_lg) {
+    position: relative;
+  }
+
+  @media (max-width: variables.$breakpoint_md) {
+    font-size: 44px;
+  }
+}
+
+.subtitle {
+  top: 180px;
+  position: absolute;
+  font-size: 32px;
+  color: white;
+  max-width: 60%;
+
+  @media (max-width: variables.$breakpoint_lg) {
+    position: relative;
+    top: 0;
+    max-width: 80%;
+  }
+
+  @media (max-width: variables.$breakpoint_md) {
+    font-size: 22px;
+  }
+}

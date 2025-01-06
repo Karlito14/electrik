@@ -1,0 +1,36 @@
+@use '@src/variables.scss';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: variables.$grey;
+
+  @media (max-width: variables.$breakpoint_sm) {
+    flex-direction: column;
+  }
+}
+
+.title {
+  color: variables.$orange;
+
+  @media (max-width: variables.$breakpoint_sm) {
+    margin-bottom: 20px;
+  }
+}
+
+.list {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: white;
+  transition: all 0.4s;
+  padding: 0 10px;
+
+  &:hover {
+    color: variables.$orange;
+  }
+}
