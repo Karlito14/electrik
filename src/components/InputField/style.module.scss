@@ -6,6 +6,10 @@
   flex-direction: column;
   width: 60%;
 
+  @media (max-width: variables.$breakpoint_sm) {
+    width: 80%;
+  }
+
   label {
     color: white;
     margin-bottom: 10px;
