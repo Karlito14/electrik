@@ -7,22 +7,31 @@
   justify-content: space-between;
   align-items: center;
 
+  @media (max-width: variables.$breakpoint_sm) {
+    flex-direction: column;
+    text-align: center;
+  }
+
   h2 {
     color: variables.$orange;
   }
 
   address {
     color: white;
+
+    @media (max-width: variables.$breakpoint_sm) {
+      margin: 10px 0;
+    }
   }
 }
 
 .social_medias {
-    display: flex;
-    align-items: center;
-    i {
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-        margin: 5px;
-    }
+  display: flex;
+  align-items: center;
+  i {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+  }
 }
