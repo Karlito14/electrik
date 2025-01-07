@@ -1,0 +1,23 @@
+@use '@src/variables.scss';
+
+.title {
+  border-bottom: 1px solid variables.$orange;
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+
+  i {
+    color: variables.$grey;
+    margin-right: 20px;
+    transition: all 0.4s;
+  }
+}
+
+.response {
+  font-size: 18px;
+  margin: 20px 0;
+  transition: all 0.4s;
+}

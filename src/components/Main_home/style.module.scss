@@ -1,14 +1,19 @@
 @use '@src/variables.scss';
 
 .section,
-.section_job {
+.section_job,
+.section_FAQ {
   margin: 80px;
-  text-align: center;
   padding-bottom: 30px;
 
   @media (max-width: variables.$breakpoint_md) {
     margin: 30px;
   }
+}
+
+.section,
+.section_job {
+  text-align: center;
 }
 
 .separator {
@@ -25,4 +30,11 @@
 
 .text {
   font-size: 20px;
+}
+
+.section_FAQ {
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }

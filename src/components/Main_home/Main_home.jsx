@@ -1,10 +1,11 @@
-import { AssetList } from '../AssetList/AssetList';
+import { AssetList } from '@components/AssetList/AssetList';
 import { Form } from '@components/Form/Form';
+import { FAQList } from '@components/FAQList/FAQList';
 import style from './style.module.scss';
 
 export const Main_home = () => {
   return (
-    <main className={style.main} id='prestations'>
+    <main className={style.main} id="prestations">
       <section className={style.section}>
         <h2 className={style.title}>
           Pour une installation, une remise aux normes ou un dépannage en
@@ -29,6 +30,10 @@ export const Main_home = () => {
       </section>
       <section>
         <Form />
+      </section>
+      <section className={style.section_FAQ}>
+        <h2>Questions les plus fréquentes</h2>
+        <FAQList />
       </section>
     </main>
   );

@@ -43,4 +43,17 @@ const ASSETS = [
   },
 ];
 
-export { ASSETS, CLIENTS };
+const FAQ = [
+  {
+    question: 'En combien de temps pouvez-vous intervenir ?',
+    response:
+      'Si vous avez une demande d’urgence, notre électricien peut intervenir sous 4 heures.',
+  },
+  {
+    question: 'Pourquoi vous et pas un autre ?',
+    response:
+      'Chez Electrik, nous nous engageons sur la qualité de notre électricien et la satisfaction client. Tous nos artisans sont sélectionnés minutieusement. Nous nous entretenons avec eux afin de tester leurs compétences. Ils peuvent alors intervenir chez nos clients. Après chaque opération, nous assurons le suivi.',
+  },
+];
+
+export { ASSETS, CLIENTS, FAQ };
