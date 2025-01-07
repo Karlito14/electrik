@@ -1,6 +1,7 @@
 import { AssetList } from '@components/AssetList/AssetList';
 import { Form } from '@components/Form/Form';
 import { FAQList } from '@components/FAQList/FAQList';
+import { Footer } from '@components/Footer/Footer';
 import style from './style.module.scss';
 
 export const Main_home = () => {
@@ -35,6 +36,7 @@ export const Main_home = () => {
         <h2>Questions les plus fréquentes</h2>
         <FAQList />
       </section>
+      <Footer />
     </main>
   );
 };

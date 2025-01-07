@@ -1,0 +1,28 @@
+@use '@src/variables.scss';
+
+.footer {
+  background-color: variables.$grey;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    color: variables.$orange;
+  }
+
+  address {
+    color: white;
+  }
+}
+
+.social_medias {
+    display: flex;
+    align-items: center;
+    i {
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        margin: 5px;
+    }
+}
